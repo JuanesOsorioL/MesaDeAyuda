@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#form_nuevo_usuario input {
+  display: block;
+  margin-top: 16px;
+  font-size: 15px;
+  width: 100%;
+}
 #a_registroDeUsuario{
     float: right;
     margin-top: 15px;
@@ -11,20 +21,18 @@
     background-color: hsl(271, 83%, 84%);
     color: white;
 }
-#registrar_usuario_form{
+form_nuevo_usuario{
     background-color:rgb(139, 245, 165);
     width: 250px;
     margin: 0 auto;
-
 }
-#registrar_usuario_form button{
+form_nuevo_usuario button{
     margin-top: 30px;
     margin-left: 35%;
     color: rgb(51, 95, 177);
     border: 1px solid rgb(221, 55, 63);
 }
-#registrar_usuario_form button:hover{
+form_nuevo_usuario button:hover{
     background-color: hsl(128, 100%, 47%);
     color: white;
 }
-
