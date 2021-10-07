@@ -1,30 +1,61 @@
-#a_registroDeUsuario{
-    float: right;
-    margin-top: 15px;
-    margin-right: 40px;
-    text-decoration: none;
-    color:rgb(44, 44, 226);
-    border: 1px solid rgb(243, 149, 8);
-    padding: 3px;
-}
-#a_registroDeUsuario:hover{
-    background-color: hsl(271, 83%, 84%);
-    color: white;
-}
-#registrar_usuario_form{
-    background-color:rgb(139, 245, 165);
-    width: 250px;
-    margin: 0 auto;
-
-}
-#registrar_usuario_form button{
-    margin-top: 30px;
-    margin-left: 35%;
-    color: rgb(51, 95, 177);
-    border: 1px solid rgb(221, 55, 63);
-}
-#registrar_usuario_form button:hover{
-    background-color: hsl(128, 100%, 47%);
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
 }
 
+#horizontal_navbar {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(63, 63, 63);
+}
+
+#horizontal_navbar #landing_logo {
+  width: 70px;
+}
+
+#horizontal_navbar #a_registroDeUsuarios {
+  float: right;
+  display: block;
+  margin-top: 15px;
+  margin-right: 40px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 3px;
+}
+
+#horizontal_navbar #a_registroDeUsuarios:hover {
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 175, 175);
+}
+
+#horizontal_navbar #a_registroDeUsuarios:active {
+  background-color: rgb(247, 0, 255);
+}
+
+#container h1 {
+  text-align: center;
+}
+
+#container p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#form_nuevo_usuario {
+  width: 250px;
+  margin: 0 auto;
+}
+
+#form_nuevo_usuario input {
+  display: block;
+  margin-top: 16px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
