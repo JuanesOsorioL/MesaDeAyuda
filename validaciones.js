@@ -29,8 +29,7 @@ function validar_nombre_usuario(string) {
     }
     }
 
-function validar_contrasena(string) {
-    if (string.lenght > 5) {
+function validar_contrasena(string){ if (string.lenght > 5) {
         if ([A-Z0-9]+$/i.test(string)) {
             return false;
         }   else {
