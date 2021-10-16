@@ -45,30 +45,3 @@ module.exports.validar_nombre_usuario = validar_nombre_usuario;
 module.exports.validar_edad_usuario = validar_edad_usuario;
 module.exports.validar_contrasena = validar_contrasena;
 
-
-
-let boton=document.getElementById("enviar");
-boton.addEventListener("click",function () {
-  let edad=document.getElementById("dato_edad_usuario").value;
-  let nombre=document.getElementById("dato_nombre_usuario").value;
-    validar_edad_usuario(edad);
-    validar_nombre_usuario(nombre);
-});
-
-function validar_edad_usuario(edad) {
-  edad=Number(edad);
-  if (edad>0 && edad>=13 && edad<=110){
-    console.log(edad);
-  }else{
-    alert("La edad no es válida",edad);
-  }
-}
-
-function validar_nombre_usuario(string) {
-  if (/^([A-Z][a-z]+[\s]*)+\S$/.test(string)) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
