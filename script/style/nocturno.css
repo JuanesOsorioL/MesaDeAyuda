@@ -1,0 +1,58 @@
+/* 
+.dark {
+  background-color: black;
+  color: white;
+} */
+
+
+
+.sol {
+  width: 20px;
+  height: 20px;
+  display: inline;
+}
+
+.noche {
+  width: 20px;
+  height: 20px;
+  display: inline;
+}
+
+#container_ModoNocturno {
+  float: right;
+}
+
+.right {
+  float: right;
+}
+
+.colo_night_ModoNocturno {
+  background-color: purple;
+}
+
+.colo_sun_ModoNocturno {
+  background-color: #ffff00;
+}
+
+.dark {
+  color: white;
+  background-color: black;
+}
+
+#container_ModoNocturno .ModoNocturno {
+  margin-top: 10px;
+  width: 40px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+#container_ModoNocturno .ModoNocturno .boton {
+  width: 20px;
+  height: 19px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: black;
+  cursor: pointer;
+}
