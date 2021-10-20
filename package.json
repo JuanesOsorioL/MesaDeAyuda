@@ -1,0 +1,28 @@
+{
+  "name": "mesadeayuda",
+  "version": "1.0.0",
+  "description": "proyecto MisionTic 2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/index.js",
+    "dev": "nodemon backend/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanesOsorioL/MesaDeAyuda.git"
+  },
+  "author": "juan esteban osorio lopera, michael steven castrillon rojas, henry william cifuentes, alvaro rojas guarnizo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanesOsorioL/MesaDeAyuda/issues"
+  },
+  "homepage": "https://github.com/JuanesOsorioL/MesaDeAyuda#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
