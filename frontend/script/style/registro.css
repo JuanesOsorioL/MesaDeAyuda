@@ -1,0 +1,82 @@
+#form_nuevo_usuario{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+    
+}
+.label_Registro{
+    color: rgb(255, 255, 255);
+    font-size: 14pt;
+    font-family:'Times New Roman', Times, serif;
+}
+#dato_nombre_completo{
+    padding: 10px;
+    font-size: 16px;
+    border: solid #59203a 3px;
+    border-radius: 28px;
+    margin-left: 1%;
+    margin-top: 20px;
+}
+#dato_nombre_usuario{
+    padding: 10px;
+    font-size: 16px;
+    border: solid #59203a 3px;
+    border-radius: 28px;
+    margin-left: 2%;
+    margin-top: 10px;
+
+}
+
+#dato_edad_usuario{
+    padding: 10px;
+    font-size: 16px;
+    border: solid #59203a 3px;
+    border-radius: 28px;
+    margin-left: 3%;
+    margin-top: 10px;
+    
+}
+
+#dato_contrasena{
+    padding: 10px;
+    font-size: 16px;
+    border: solid #59203a 3px;
+    border-radius: 28px;
+    margin-left: 3%;
+    margin-top: 10px;
+}
+.enviar {
+    font-family: Georgia;
+    color: #590d0d;
+    font-size: 16px;
+    padding: 5px;
+    text-decoration: none;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    text-shadow: 1px 1px 10px #753575;
+    border: solid #59203a 3px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#e35858), to(#ff5252));
+    background: -moz-linear-gradient(top, #e35858, #ff5252);
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: 70px;
+  }
+  .enviar:hover{
+    background: #7fc464;
+  }
+.titulo{
+    color:rgb(230, 82, 36);
+    font-family: 'Times New Roman', Times, serif;
+    text-justify: auto; 
+
+}
+.text{
+    color: azure;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align:center;
+    margin-top: 50px;
+}

@@ -1,0 +1,31 @@
+#titulo_principal{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(230, 82, 36);
+    padding: 15px;
+}
+.caja_imagen{
+    text-align:left;
+    display:flex;
+    
+
+}
+.imagen_principal{
+    border: solid #030000 3px; 
+    border-radius: 28px;
+    width: 50%;
+    margin-bottom: 9px;
+}
+.texto{
+    text-align:justify;
+    color: rgb(242, 247, 245);
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+.header--ventanaLoguin{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;  
+}
+.Seleccionar:hover{
+ font-style:italic;
+
+}
