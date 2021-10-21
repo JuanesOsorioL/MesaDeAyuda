@@ -14,3 +14,13 @@ function consultar() {
     .then((res) => res.json())
     .then((res2) => console.log(res2));
 }
+
+///localstorage
+function asignarlocalstorage(params) {
+  let usuario = { nombre: "juan", rol: 1, usuario: "juanes" };
+  localStorage.setItem("usuario", JSON.stringify(usuario));
+}
+
+function obtenerlocalstorage(params) {
+  let usuariol = JSON.parse(localStorage.GetItem("usuario"));
+}
