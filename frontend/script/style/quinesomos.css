@@ -1,0 +1,42 @@
+.caja_texto_quienes_somos{
+    width: 100%;
+    float: block;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.titulo_quienes_somos{
+    text-align: center;
+    width: 100%;
+    color:rgb(230, 82, 36);
+
+    
+
+}
+#texto_quienes_somos{
+    font-size: 18px;
+    color: rgb(248, 248, 248);
+    padding: 10px;
+    width: 100%;
+}
+
+.caja_cita{
+    width:150px;
+    margin: 20px;;
+    padding:20px;
+    background-color:rgb(209, 248, 209);
+    color:rgb(175, 0, 0);
+    width: 100%;
+    text-align: justify;
+    border-style:outset;
+    border-width: 10px;
+    margin-bottom: 100px;
+}
+#Caja_de_citas{
+    display: flex;
+    align-content: center;
+    width: 100%;
+}
+#cita_quienes_somos{
+    color:rgb(175, 0, 0);
+
+}

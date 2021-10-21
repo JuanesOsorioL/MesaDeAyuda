@@ -4,6 +4,7 @@
 @import "./script/style/registro.css";
 @import "./script/style/iniciarsesion.css";
 @import "./script/style/principal.css";
+@import "./script/style/quinesomos.css";
 
 
 * {
@@ -13,7 +14,6 @@
 
 #container{
   background-color: #130201;
-
 }
 
 
