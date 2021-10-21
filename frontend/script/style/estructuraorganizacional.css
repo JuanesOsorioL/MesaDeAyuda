@@ -1,0 +1,37 @@
+.caja_principal_estructura{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    display: block;
+
+}
+#titulo_estructura_organizacional{
+    color:rgb(230, 82, 36);
+
+}
+.caja_scrum{
+    display:flex;
+    width: 100%;
+}
+.scrum_imagen{
+    width: 50%;
+    border: solid #030000 3px; 
+    border-radius: 28px;
+}
+#texto_scrum{
+    color: azure;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+
+}
+@media (min-width: 769px) and (max-width: 2440px) {
+    .scrum_imagen{
+        width: 70%;
+        border: solid #030000 3px; 
+        border-radius: 28px;}
+    .caja_scrum{
+        width: 100%;
+        display:inline;
+    }
+}

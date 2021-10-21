@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 let conexion = require("./conexion");
 
 module.exports = {
@@ -107,3 +109,4 @@ module.exports = {
     );
   },
 };
+>>>>>>> 8c28256e54ac480d811e977acd227bedd432ad38
