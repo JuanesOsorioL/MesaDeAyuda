@@ -11,7 +11,8 @@ header {
 }
 
 header .header--logo {
-  margin: 7px 0px 0px 6px;
+    width: calc(8.3% * 2); 
+   margin: 7px 0px 0px 6px;
 }
 
 header .header--logo a .header__a--img {
@@ -20,6 +21,7 @@ header .header--logo a .header__a--img {
 }
 
 header .header--menu {
+   width: calc(8.3% * 4);
   padding-top: 17px;
   text-align: center;
   -webkit-transition: 1s;
@@ -66,6 +68,7 @@ header .header--menu .header--nav .nav--ul .nav__ul--li a:hover .nav__ul--li {
 }
 
 header .header--loguin {
+  width: calc(8.3% * 1);
   margin: 5px 9px 0px 10px;
   width: 36px;
   height: 43px;
@@ -112,8 +115,29 @@ header .header--loguin .header--ventanaLoguin label:hover .nav--ul {
   text-decoration: underline;
 }
 
+.container_ModoNocturno {
+width: calc(8.3% * 5);
+margin-top: 5px;
+text-align: center;
+}
+
+
+
 @media (min-width: 769px) and (max-width: 2440px) {
+
+  .container_ModoNocturno {
+    width: calc(8.3% * 2);
+    margin-top: 5px;
+    text-align: center;
+  }
+
+
+header .header--logo {
+  width: calc(8.3% * 1);
+}
+
   header .header--menu {
+    width: calc(8.3% * 7);
     padding-top: 13px;
   }
 

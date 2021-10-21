@@ -18,9 +18,9 @@
   display: inline;
 }
 
-#container_ModoNocturno {
+/*  .container_ModoNocturno {
   float: right;
-}
+}  */
 
 .right {
   float: right;
@@ -39,7 +39,7 @@
   background-color: black;
 }
 
-#container_ModoNocturno .ModoNocturno {
+.container_ModoNocturno .ModoNocturno {
   margin-top: 10px;
   width: 40px;
   height: 20px;
@@ -48,7 +48,7 @@
   display: inline-block;
 }
 
-#container_ModoNocturno .ModoNocturno .boton {
+.container_ModoNocturno .ModoNocturno .boton {
   width: 20px;
   height: 19px;
   border: 1px solid white;
