@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 const express = require("express");
 const router = express.Router();
 let {
@@ -22,4 +20,3 @@ router.put("/actualizarticket", actualizarticket);
 router.put("/cerrarticket", cerrarticket);
 
 module.exports = router;
->>>>>>> 8c28256e54ac480d811e977acd227bedd432ad38
