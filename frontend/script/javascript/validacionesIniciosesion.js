@@ -5,7 +5,6 @@ function accion(){
     validacion_contrasena=validar_contrasena(contrasena);
     cargar=validacion(validacion_usuario,validacion_contrasena);
     IniciarSesion(cargar,usuario,contrasena);
-
 }
 
   function validar_usuario(string){
@@ -33,11 +32,11 @@ function accion(){
         console.log(Usu,Con);}
     }
 
-function IniciarSesion(cargar,Usuario,Contrasena){
+function IniciarSesion(cargar,usuario,contrasena){
     if(cargar){
         let entra={
-            usuario:Usuario,
-            contrasena:Contrasena,
+            usuario:usuario,
+            contrasena:contrasena,
             rol:1};
         console.log(entra); //retornar para la funcion get
         return entra;
