@@ -55,14 +55,14 @@ function validacion(Non,Usu,Eda,Con){
 }
 function IniciarSesion(cargar,Nombre,Usuario,Edad,Contrasena){
   if(cargar){
-      let Iniciar={
+      let entra={
         nombre:Nombre,
         usuario:Usuario,
         contrasena:Contrasena,
         edad:Edad,
         rol:1};
-      console.log(Iniciar); //retornar para el fecth
-      return Iniciar;
+      console.log(entra); //retornar para la funciono get
+      return entra;
   }else{
     console.log("falló conexion con base de datos")
   }

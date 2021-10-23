@@ -36,10 +36,10 @@ function accion(){
 function IniciarSesion(cargar,Usuario,Contrasena){
     if(cargar){
         let entra={
-            rol:1,
             usuario:Usuario,
-            contrasena:Contrasena};
-        console.log(entra); //retornar para el fecth
+            contrasena:Contrasena,
+            rol:1};
+        console.log(entra); //retornar para la funcion get
         return entra;
     }else{
         alert("Por favor verifique que la contraseña no posea espacios y sea mayor a 6 caracteres");
