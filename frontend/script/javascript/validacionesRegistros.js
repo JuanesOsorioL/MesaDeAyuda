@@ -7,8 +7,8 @@ function accion(){
   validacion_usuario=validar_usuario(usuario);
   validacion_edad=validar_edad_usuario(edad);
   validacion_contrasena=validar_contrasena(contrasena);
-  validacion(validacion_nombre,validacion_usuario,validacion_edad,validacion_contrasena);}
-
+  cargar=validacion(validacion_nombre,validacion_usuario,validacion_edad,validacion_contrasena);
+  IniciarSesion(cargar,nombre,usuario,edad,contrasena);}
 function validar_edad_usuario(edad) {
   if (/^([0-9])+$/.test(edad)) {
     if (edad>=0 && edad >13 && edad <110) {
@@ -41,13 +41,29 @@ function validar_contrasena(string){
     return false;}
 }
 function validacion(Non,Usu,Eda,Con){
-  console.log(Non,Usu,Eda,Con);
   if (Non && Usu && Eda && Con){
-    return console.log(Non,Usu,Eda,Con) //aqui se puede retorna que todo esta bien-, y usar crear otra funcion para pasr obejtos al fecth.
+    return true; //aqui se puede retorna que todo esta bien
   }if(Eda===false && Con===false){
-    return alert("Por favor verifique que la edad sea correcta.\nPor favor verifique que la contraseña no posea espacios y sea mayor a 6 caracteres");
-  }if(Eda===false){
-    return alert("Por favor verifique que la edad sea correcta");
-  }if(Con===false){
-    return alert("Por favor verifique que la contraseña no posea espacios y sea mayor a 6 caracteres");}
+    console.log(Non,Usu,Eda,Con);
+    alert("Por favor verifique que la edad sea correcta.\nPor favor verifique que la contraseña no posea espacios y sea mayor a 6 caracteres");
+  }else if(Eda===false){
+    console.log(Non,Usu,Eda,Con);
+    alert("Por favor verifique que la edad sea correcta");
+  }else if(Con===false){
+    console.log(Non,Usu,Eda,Con);
+    alert("Por favor verifique que la contraseña no posea espacios y sea mayor a 6 caracteres");}
+}
+function IniciarSesion(cargar,Nombre,Usuario,Edad,Contrasena){
+  if(cargar){
+      let Iniciar={
+        nombre:Nombre,
+        usuario:Usuario,
+        contrasena:Contrasena,
+        edad:Edad,
+        rol:1};
+      console.log(Iniciar); //retornar para el fecth
+      return Iniciar;
+  }else{
+    console.log("falló conexion con base de datos")
+  }
 }
