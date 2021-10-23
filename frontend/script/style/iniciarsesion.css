@@ -71,6 +71,10 @@
     margin-left: 10px;
     margin-bottom: 70px;
 }
+.btn-cancelar:hover{
+    background: #7fc464;}
+.btn-ingresar:hover{
+    background: #7fc464;}
 
 .titulo{
     color:rgb(230, 82, 36);
