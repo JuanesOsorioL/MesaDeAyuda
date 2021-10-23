@@ -3,11 +3,7 @@ function accion(){
   let edad=document.getElementById("dato_edad_usuario").value;
   let nombre=document.getElementById("dato_nombre_completo").value;
   let contrasena=document.getElementById("dato_contrasena").value;
-  validacion_nombre=validar_usuario(nombre);
-  validacion_usuario=validar_usuario(usuario);
-  validacion_edad=validar_edad_usuario(edad);
-  validacion_contrasena=validar_contrasena(contrasena);
-  cargar=validacion(validacion_nombre,validacion_usuario,validacion_edad,validacion_contrasena);
+  cargar=validacion(validar_usuario(nombre),validar_usuario(usuario),validar_edad_usuario(edad),validar_contrasena(contrasena));
   IniciarSesion(cargar,nombre,usuario,edad,contrasena);}
 function validar_edad_usuario(edad) {
   if (/^([0-9])+$/.test(edad)) {

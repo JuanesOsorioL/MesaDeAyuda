@@ -1,10 +1,16 @@
+let {getlogin} = require("./conexion");
+
 function accion(){
     let usuario=document.getElementById("user").value;
     let contrasena=document.getElementById("clave").value;
-    validacion_usuario=validar_usuario(usuario);
-    validacion_contrasena=validar_contrasena(contrasena);
-    cargar=validacion(validacion_usuario,validacion_contrasena);
-    IniciarSesion(cargar,usuario,contrasena);
+    cargar=validacion(validar_usuario(usuario),validar_contrasena(contrasena));
+    let objeto=IniciarSesion(cargar,usuario,contrasena);
+    let respuesta=getlogin(objeto);
+    if (respuesta.mensaje!="Error") {
+      /*mandar la conuslta al html principal*/
+    } else {
+      alert("Usuario no encontrado")
+    }
 }
 
   function validar_usuario(string){
@@ -36,8 +42,7 @@ function IniciarSesion(cargar,usuario,contrasena){
     if(cargar){
         let entra={
             usuario:usuario,
-            contrasena:contrasena,
-            rol:1};
+            contrasena:contrasena};
         console.log(entra); //retornar para la funcion get
         return entra;
     }else{

@@ -24,3 +24,6 @@ function asignarlocalstorage(params) {
 function obtenerlocalstorage(params) {
   let usuariol = JSON.parse(localStorage.GetItem("usuario"));
 }
+function getlogin(objeto){}
+
+module.exports.getlogin=getloguin;

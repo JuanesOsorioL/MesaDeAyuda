@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../estilos.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <title>Iniciar Sesion</title>
+  <title>En sesion</title>
 </head>
+
 <body>
-  
-<header>
+  <header>
     <div class="header--logo">
       <a href="../../../index.html" class="bt-menu"><img class="header__a--img" src="../../../img/Logo.png" alt="logo"></a>
     </div>
 
     <div class="header--menu">
       <span>Menu</span>
-    <nav class="header--nav">
+       <nav class="header--nav">
       <ul class="nav--ul">
           <li class="nav__ul--li"><a href="./quienesomos.html"><span class="icon-house"></span>Quienes Somos</a></li>
           <li class="nav__ul--li"><a href="./estructuraorganizacional.html"><span class="icon-earth"></span>Estructura Organizacional</a>
@@ -35,55 +36,34 @@
       <img class="noche" src="../../../img/crescent-moon.svg" alt="sol" srcset="" />
       </div>
 
-
     <div class="header--loguin">
       <img class="header--img" src="../../../img/loguin.jpg" alt="" srcset="">
+      <!-- <img class="header--img" src="../../../img/loguin.jpg" alt="" srcset="">-->
       <div class="header--ventanaLoguin">
-        <a class="Seleccionar" href="../html/registro.html">Registrar</a>
+        <a class="Seleccionar" href="../../../index.html">Cerrar sesion</a>
       </div>
     </div>
 
   </header>
 
+  
   <main id="container">
-    <div id="caja_gigante">
-        <section class="main--section">
-              <br>
-              <div class="texto_acompañante"><h1 class="titulo">BIENVENIDO AL INICIO DE SESION</h1>
-                <br><P class="text">Ingrese el usuario y el password. </P></div>
-            <br><br><form class="main__section--form" >
-                <table class="form--table">
-                    <tr class="form__table--tr">
-                        <td class="col-sm-2 col-form-label">Usuario</td>
-                    </tr>
-
-                    <tr class="form__table--tr">
-                        <td class="col-sm-10">
-                            <input type="text" id="user" class="form-user" name="txtUsuario"/></td>
-                    </tr>
-                    <tr class="form__table--tr">
-                        <td class="col-sm-2 col-form-label">Password</td>
-                    </tr>
-
-                    <tr class="form__table--tr">
-                        <td class="col-sm-10">
-                            <input type="password" class="form-pass" name="txtPassword"
-                                autocomplete="on" id="clave"/>
-                        </td>
-                    </tr>
-                    <tr class="form__table--btn">
-                        <td >
-                            <button class="btn-ingresar" onclick="accion()">Ingresar</button>  
-                            <a href="../../../index.html"><input type="button" class="btn-cancelar" name="btn" value="Cancelar" /></a>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-            </form>
-        </section>
-      </div>
-    </main>
-
+    <br>
+    <div class="texto_acompañante"><h1 class="titulo">BIENVENIDO AL REGISTRO</h1>
+      <br><P class="text">Por favor registra tus datos de manera correcta para iniciar tu solicitud. </P></div>
+<form id="form_nuevo_usuario">
+  <label class="label_Registro">Digita tu nombre</label><input type="text" id="dato_nombre_completo" value="" placeholder="Nombre" />
+  <br>
+  <label class="label_Registro">Crea tu usuario</label><input type="text" id="dato_nombre_usuario" value="" placeholder="Usuario" />
+  <br>
+  <label class="label_Registro">Digita tu edad</label><input type="number" id="dato_edad_usuario"  value="" placeholder="Edad" />
+  <br>
+  <label class="label_Registro">Crea tu clave</label><input type="password" id="dato_contrasena"  value="" placeholder="contraseña" />
+  <br>
+  <button class="enviar" onclick="accion()">Registrarse</button> 
+</form>
+  </main>
+  
   <footer>
 
     <div class="footer-contenedor">
@@ -108,6 +88,6 @@
     </div>
 
   </footer>
+  <script src="../javascript/validacionesRegistros.js"></script>
 </body>
-<script src="../javascript/validacionesIniciosesion.js"></script>
 </html>
