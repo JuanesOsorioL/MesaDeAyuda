@@ -1,0 +1,65 @@
+.form--table{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 42%;
+    text-align: center;
+    
+}    
+.form__table--tr{ font-family: Georgia; color: #f0e9e9;
+}
+
+.col-sm-10{
+    width: 0%;
+    padding: 0px;
+    font-size: 16px;
+    border: solid #59203a 3px;
+    border-radius: 20px;
+    margin-left: 0;
+    margin-top: 0;
+}
+.btn-ingresar{
+    font-family: Georgia;
+    color: #590d0d;
+    font-size: 16px;
+    padding: 5px;
+    text-decoration: none;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    text-shadow: 1px 1px 10px #753575;
+    border: solid #59203a 3px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#e35858), to(#ff5252));
+    background: -moz-linear-gradient(top, #e35858, #ff5252);
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-bottom: 70px;
+}
+.btn-cancelar{
+    font-family: Georgia;
+    color: #590d0d;
+    font-size: 16px;
+    padding: 5px;
+    text-decoration: none;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    text-shadow: 1px 1px 10px #753575;
+    border: solid #59203a 3px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#e35858), to(#ff5252));
+    background: -moz-linear-gradient(top, #e35858, #ff5252);
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 70px;
+}
+
+.titulo_inicio{
+    color:rgb(230, 82, 36);
+    font-family: 'Times New Roman', Times, serif;
+    text-justify: auto; 
+
+}
