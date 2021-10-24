@@ -1,5 +1,37 @@
-async function loguin() {
-  let data = { usuario: "admin", contrasena: "123" };
+window.onload = () => {
+  if (localStorage.key("registro") != null) {
+  } else {
+  }
+};
+
+export default {
+  getlogin: async (body) => {
+    let resultado = await fetch("http://localhost:3000/loguin", {
+      method: "POST",
+      body: JSON.stringify(body),
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+    })
+      .then((res) => res.json())
+      .then((respuesta) => {
+        return respuesta;
+      });
+    return resultado;
+  },
+  setlocalstorage: (body) => {
+    localStorage.setItem("registro", JSON.stringify(body));
+  },
+  getlocalstorage: () => {
+    return JSON.parse(localStorage.GetItem("registro"));
+  },
+  deletelocalstorage: () => {
+    localStorage.removeItem("registro");
+  },
+};
+
+async function hhhh(body) {
   let resultado = await fetch("http://localhost:3000/loguin", {
     method: "POST",
     body: JSON.stringify(data),
@@ -55,16 +87,3 @@ async function consultarusuarios() {
   console.log(resultado);
   return resultado;
 }
-
-///localstorage
-function asignarlocalstorage(params) {
-  let usuario = { nombre: "juan", rol: 1, usuario: "juanes" };
-  localStorage.setItem("usuario", JSON.stringify(usuario));
-}
-
-function obtenerlocalstorage(params) {
-  let usuariol = JSON.parse(localStorage.GetItem("usuario"));
-}
-function getlogin(objeto){}
-
-module.exports.getlogin=getloguin;

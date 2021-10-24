@@ -9,7 +9,7 @@ module.exports = {
       (error, rows) => {
         if (!error) {
           if (rows.length != 0) {
-            res.json({ estado: "Exitoso", msj: rows });
+            res.json({ estado: "Exitoso", msj: rows[0] });
           } else {
             res.json({ estado: "NUll", msj: "no existe" });
           }
