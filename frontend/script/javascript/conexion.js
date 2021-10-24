@@ -1,5 +1,41 @@
+import Localstorage from "./localstorage.js";
+
 window.onload = () => {
-  if (localStorage.key("registro") != null) {
+  if (Localstorage.validarlocalstorage() != null) {
+    const ventanaloguin = document.querySelector(".header--ventanaLoguin");
+    ventanaloguin.innerHTML = "";
+    let div = document.createElement("div");
+    let a = document.createElement("a");
+    a.classList.add("Seleccionar");
+    a.href = "../../../index.html";
+    a.innerHTML = "Salir";
+    a.id = "logout";
+    a.addEventListener("click", function () {
+      Localstorage.deletelocalstorage();
+    });
+
+    div.appendChild(a);
+    ventanaloguin.appendChild(div);
+
+    let rol = Localstorage.getlocalstorage().rol;
+    if (rol == 2) {
+      const img = document.querySelector(".header--img");
+      img.src = "../../../img/admin.jpg";
+      const nav = document.querySelector(".submenu");
+
+      let div = document.createElement("div");
+      div.classList.add("nav--subnav");
+      div.innerHTML = `
+    <ul class="nav--ul">
+        <li class="nav__ul--li"><a href="./quienesomos.html"><span class="icon-house"></span>Quienes Somos</a></li>
+        <li class="nav__ul--li"><a href="./estructuraorganizacional.html"><span class="icon-earth"></span>Estructura Organizacional</a>
+        </li>
+    </ul>`;
+      nav.appendChild(div);
+    } else {
+      const img = document.querySelector(".header--img");
+      img.src = "../../../img/user.png";
+    }
   } else {
   }
 };
@@ -19,15 +55,6 @@ export default {
         return respuesta;
       });
     return resultado;
-  },
-  setlocalstorage: (body) => {
-    localStorage.setItem("registro", JSON.stringify(body));
-  },
-  getlocalstorage: () => {
-    return JSON.parse(localStorage.GetItem("registro"));
-  },
-  deletelocalstorage: () => {
-    localStorage.removeItem("registro");
   },
 };
 

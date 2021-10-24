@@ -1,4 +1,5 @@
 import Archivo from "./conexion.js";
+import Localstorage from "./localstorage.js";
 
 const btnIngresar = document.querySelector(".btn-ingresar");
 btnIngresar.addEventListener("click", function () {
@@ -8,17 +9,16 @@ btnIngresar.addEventListener("click", function () {
 async function accion() {
   let usuario = document.getElementById("user").value;
   let contrasena = document.getElementById("clave").value;
-  /* let cargar = validacion(
-    validar_usuario(usuario),
-    validar_contrasena(contrasena)
-  ); */
-  let objeto = IniciarSesion(true, usuario, contrasena);
-  let respuesta = await Archivo.getlogin(objeto);
-  console.log(await respuesta);
+  let entra = {
+    usuario,
+    contrasena,
+  };
+
+  let respuesta = await Archivo.getlogin(entra);
   if (respuesta.estado == "Exitoso") {
-    Archivo.setlocalstorage(respuesta.msj);
+    Localstorage.setlocalstorage(respuesta.msj);
     if (respuesta.msj.rol == 1) {
-      location.href = "requerimeinto.html";
+      location.href = "requrimiento.html";
     } else {
       location.href = "principal.html";
     }
@@ -27,7 +27,7 @@ async function accion() {
     alert("Usuario no encontrado");
   }
 }
-
+/* 
 function validar_usuario(string) {
   let r = /^([A-Za-z]+[\s]*)+\S$/;
   if (r.test(string)) {
@@ -63,7 +63,7 @@ function IniciarSesion(cargar, usuario, contrasena) {
       usuario,
       contrasena,
     };
-    /*  console.log(entra); //retornar para la funcion get */
+    ///  console.log(entra); //retornar para la funcion get 
     return entra;
   } else {
     alert(
@@ -71,3 +71,4 @@ function IniciarSesion(cargar, usuario, contrasena) {
     );
   }
 }
+ */

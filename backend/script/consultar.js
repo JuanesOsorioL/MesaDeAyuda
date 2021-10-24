@@ -4,7 +4,7 @@ module.exports = {
   loguin: async (req, res) => {
     const { usuario, contrasena } = req.body;
     conexion.query(
-      "select usuario,contrasena,rol from usuario where usuario=? and contrasena=?",
+      "select usuario,contrasena,rol,nombre from usuario where usuario=? and contrasena=?",
       [usuario, contrasena],
       (error, rows) => {
         if (!error) {

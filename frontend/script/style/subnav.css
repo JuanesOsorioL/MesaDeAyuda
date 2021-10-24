@@ -1,0 +1,19 @@
+.nav--subnav {
+  background-color: #b33230;
+   width: 100%;
+   height: 25px;
+    /* justify-content: space-between; */
+    text-align: center;
+    margin: auto;
+}
+.nav__ul--li{
+  padding: 0px 10px 0px 10px;
+  display:inline;
+  list-style: none;
+  
+}
+.nav__ul--li a{
+      padding-left: 40 px;
+      color: #ffffff;
+  text-decoration: none;
+}
