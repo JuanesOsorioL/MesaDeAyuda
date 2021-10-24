@@ -40,28 +40,28 @@
       <img class="header--img" src="../../../img/loguin.jpg" alt="" srcset="">
       <!-- <img class="header--img" src="../../../img/loguin.jpg" alt="" srcset="">-->
       <div class="header--ventanaLoguin">
-        <a class="Seleccionar" href="../../../index.html">Cerrar sesion</a>
+        <a class="Seleccionar" href="../../../index.html">Salir</a>
       </div>
     </div>
 
   </header>
 
   
-  <main id="container">
+  <main id="container">s
     <br>
-    <div class="texto_acompañante"><h1 class="titulo">BIENVENIDO AL REGISTRO</h1>
-      <br><P class="text">Por favor registra tus datos de manera correcta para iniciar tu solicitud. </P></div>
-<form id="form_nuevo_usuario">
-  <label class="label_Registro">Digita tu nombre</label><input type="text" id="dato_nombre_completo" value="" placeholder="Nombre" />
+    <div class="Contenedor_empleado"><!--este es el que se elimina -->
+    <h1 class="titulo">BIENVENIDO (nombre o usuario)</h1><!--este hay que modificarlo con el nombre de usuario o nomsbre completo -->
+      <br><P class="nota">Realiza tu solicitud de manera concisa y detallada para una buena compresión y resolución al problema. No dejes ningún campo sin rellenar</P></div>
+<div id="contenedor_solicitud"><div id="marco_solicitud"><form id="form_solicitud">
+  <label class="label_solicitud">Escribe tu area</label><input type="text" id="dato_area" value="" placeholder="Area" />
   <br>
-  <label class="label_Registro">Crea tu usuario</label><input type="text" id="dato_nombre_usuario" value="" placeholder="Usuario" />
+  <label class="label_solicitud" id="texto_solicitud">Escribe tu solicitud</label><br><textarea id="dato_solicitud" value="" placeholder="Buen día, por favor..."style="margin: 10px; width: 400px; height: 273px;"></textarea>
   <br>
-  <label class="label_Registro">Digita tu edad</label><input type="number" id="dato_edad_usuario"  value="" placeholder="Edad" />
+  <div id="Respuesta" ><p class="label_solicitud">Respuesta a tu solicitud anterior:</p></div>
   <br>
-  <label class="label_Registro">Crea tu clave</label><input type="password" id="dato_contrasena"  value="" placeholder="contraseña" />
-  <br>
-  <button class="enviar" onclick="accion()">Registrarse</button> 
-</form>
+  <button class="token" onclick="">Crear token</button>
+  <button class="token" onclick="alert('Token no enviado')">Cancelar</button>  
+</form></div></div></div>
   </main>
   
   <footer>
@@ -88,6 +88,6 @@
     </div>
 
   </footer>
-  <script src="../javascript/validacionesRegistros.js"></script>
+  <script src=""></script>
 </body>
 </html>
