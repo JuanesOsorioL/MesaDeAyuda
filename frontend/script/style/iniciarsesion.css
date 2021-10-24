@@ -1,1 +1,130 @@
+.main__section--form{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    align-content: center;
+    text-align: center;
+    margin-right: 33%;
+    width: 100%;
+    
 
+}
+.form--table{
+    font-family: 'Times New Roman', Times, serif;  
+    text-align: center;
+    font-size: 25px;
+    align-items: center;
+    margin-left: 25%;
+    
+}    
+.form__table--tr{ 
+    font-family: 'Times New Roman', Times, serif; 
+    color: #f0e9e9;
+    align-items: center;
+    text-align: center;
+
+}
+
+.col-sm-10{
+    border: solid #59203a 4px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: #130201;
+}
+.btn-ingresar{
+    font-family:'Times New Roman', Times, serif;
+    color: #590d0d;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    text-shadow: 1px 1px 10px #753575;
+    border: solid #59203a 3px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#e35858), to(#ff5252));
+    background: -moz-linear-gradient(top, #e35858, #ff5252);
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-bottom: 70px;
+}
+.btn-cancelar{
+    font-family:'Times New Roman', Times, serif;
+    color: #590d0d;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    text-shadow: 1px 1px 10px #753575;
+    border: solid #59203a 3px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#e35858), to(#ff5252));
+    background: -moz-linear-gradient(top, #e35858, #ff5252);
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 70px;
+}
+.btn-cancelar:hover{
+    background: #7fc464;}
+.btn-ingresar:hover{
+    background: #7fc464;}
+
+.titulo{
+    color:rgb(230, 82, 36);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 40px; 
+
+}
+.form-pass{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+.form-user{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.text{
+    width: 100%;
+    font-size: 25px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 100px;
+}
+@media (min-width: 769px) and (max-width: 2440px) {
+    .main__section--form{
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        align-content: center;
+        text-align: center;
+        margin-right: 33%;
+        width: 100%;
+        
+    
+    }
+    .form--table{
+        font-family: 'Times New Roman', Times, serif;  
+        text-align: center;
+        font-size: 25px;
+        align-items: center;
+        margin-left: 40%;
+        
+    }   
+}

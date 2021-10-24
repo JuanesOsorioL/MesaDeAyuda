@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../../estilos.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <title>Document</title>
+  <title>Iniciar Sesion</title>
 </head>
 <body>
   
@@ -46,60 +46,61 @@
   </header>
 
   <main id="container">
-
+    <div id="caja_gigante">
         <section class="main--section">
 
-         <!--    <form class="main__section--form" > -->
+              <br>
+              <div class="texto_acompañante"><h1 class="titulo">BIENVENIDO AL INICIO DE SESION</h1>
+                <br><P class="text">Ingrese el usuario y el password. </P></div>
+            <br><br><form class="main__section--form" >
+
                 <table class="form--table">
                     <tr class="form__table--tr">
                         <td class="col-sm-2 col-form-label">Usuario</td>
                     </tr>
 
                     <tr class="form__table--tr">
-                    <!--  <td class="col-sm-2 col-form-label">Usuario</td> -->
                         <td class="col-sm-10">
-                            <input type="text" class="form-user" name="txtUsuario" value="" /></td>
+                            <input type="text" id="user" class="form-user" name="txtUsuario"/></td>
                     </tr>
                     <tr class="form__table--tr">
                         <td class="col-sm-2 col-form-label">Password</td>
                     </tr>
 
                     <tr class="form__table--tr">
-                       <!--  <td class="col-sm-2 col-form-label">Password</td> -->
                         <td class="col-sm-10">
                             <input type="password" class="form-pass" name="txtPassword"
-                                autocomplete="on" />
+                                autocomplete="on" id="clave"/>
                         </td>
                     </tr>
                     <tr class="form__table--btn">
-                        <td > 
-                            <input type="submit" class="btn-ingresar" name="btn" value="Ingresar" />
-                            <input type="submit" class="btn-cancelar" name="btn" value="Cancelar" />
+                        <td >
+                            <button class="btn-ingresar" onclick="accion()">Ingresar</button>  
+                            <a href="../../../index.html"><input type="button" class="btn-cancelar" name="btn" value="Cancelar" /></a>
                         </td>
                     </tr>
                 </table>
-            <!-- </form> -->
+                <br>
+            </form>
         </section>
+      </div>
     </main>
-
-
-
 
   <footer>
 
     <div class="footer-contenedor">
       <div class="redessociales">
         <div class="circulo">
-          <i class="fab fa-twitter-square"></i>
+          <a href="https://twitter.com/Ministerio_TIC" target="_blank"><i class="fab fa-twitter-square"></i></a>
         </div>
         <div class="circulo">
-          <i class="fab fa-linkedin"></i>
+          <a href="https://www.linkedin.com/company/ministerio-de-tecnolog-as-de-la-informaci-n-y-las-comunicaciones/?originalSubdomain=co" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
         <div class="circulo">
-          <i class="fab fa-telegram"></i>
+          <a href="https://t.me/MinisterioTIC" target="_blank"><i class="fab fa-telegram"></i></a>
         </div>
         <div class="circulo">
-          <i class="fab fa-facebook-square"></i>
+          <a href="https://www.facebook.com/MinisterioTIC.Colombia/" target="_blank"><i class="fab fa-facebook-square"></i></a>
         </div>
       </div>
       <div class="texto">
@@ -109,7 +110,8 @@
     </div>
 
   </footer>
-
 </body>
-<script src="../javascript/conexion.js"></script>
+
+<script src="../javascript/validacionesIniciosesion.js"></script>
+
 </html>

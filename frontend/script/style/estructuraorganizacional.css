@@ -25,9 +25,49 @@
     padding: 10px;
 
 }
+.Separador{
+    border-width: 2px;
+    border-style:dashed;
+    border-color: #7a0000;
+}
+#titulo_participantes{
+    margin-top: 10px;
+    color:rgb(174, 175, 243);
+    margin-bottom: 15px;
+}
+.card {
+    box-sizing: border-box;
+    padding:5px;
+    background-color: rgba(218, 95, 95, 0.5);
+    border: 10px #31C5D7;
+    transition: width 2s, background-color 1s, box-shadow 1s;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #e2e2e2;
+  }
+  
+.card:hover {
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 22px;
+    color: #097e2c;
+}
+  
+.wrapper {
+    width: 50%;
+    flex-wrap: wrap;
+    
+}
+
+.caja_cards{
+    display: flex;
+
+}
+
 @media (min-width: 769px) and (max-width: 2440px) {
     .scrum_imagen{
-        width: 70%;
+        width: 50%;
         border: solid #030000 3px; 
         border-radius: 28px;}
     .caja_scrum{

@@ -60,9 +60,9 @@
     border: solid #59203a 3px;
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#e35858), to(#ff5252));
     background: -moz-linear-gradient(top, #e35858, #ff5252);
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
   .enviar:hover{
     background: #7fc464;

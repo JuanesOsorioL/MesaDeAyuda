@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../../estilos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <title>Quienes Somos</title>
+  <title>En sesion</title>
 </head>
 
 <body>
@@ -35,28 +35,33 @@
       </div>
       <img class="noche" src="../../../img/crescent-moon.svg" alt="sol" srcset="" />
       </div>
+
     <div class="header--loguin">
       <img class="header--img" src="../../../img/loguin.jpg" alt="" srcset="">
+      <!-- <img class="header--img" src="../../../img/loguin.jpg" alt="" srcset="">-->
       <div class="header--ventanaLoguin">
-        <!-- <a href="./registro.html">Registrar</a> -->
-        <a class="Seleccionar" href="./registro.html">Registrar</a>
-        <a class="Seleccionar" href="./loguin.html">Loguin</a>
+        <a class="Seleccionar" href="../../../index.html">Cerrar sesion</a>
       </div>
     </div>
 
   </header>
+
+  
   <main id="container">
     <br>
-    <div class="caja_texto_quienes_somos">
-      <h2 class="titulo_quienes_somos">MESA DE AYUDA</h2>
-      <br>
-      <p id="texto_quienes_somos">Es un proyecto web que responde adecuadamente como programa digital de interconexión empresarial para la solución de problemas específicos y generales de cada área de trabajo utilizado, dentro de un sector económico, operativo, productivo, entre otros. Desarrollado como una aplicación web de fácil utilización para los administradores y empleados con una interfaz amigable y estable. Permitiendo la recopilación de datos, administración y comunicación efectiva entre solicitantes y solucionadores pertenecientes a la organización o empresa.</p>
-      <br>
-      <div id="Caja_de_citas"><div class="caja_cita">><blockquote>Realizado por un equipo SRCUM, el diseño y el código fuente es propiedad del mismo y se podrá adquirir bajo un acuerdo comercial.
-      </blockquote></div>
-      <div class="caja_cita">><a href="https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/146273:MinTIC-inicia-proyecto-para-formar-100-000-colombianos-en-lenguaje-de-programacion" target="_blank" id="cita_quienes_somos">Realizado en acompañamiento de Mintic y su meta propuesta para el 2025. "Formar entre 68.000 y 112.000 desarrolladores de software e impulsar los procesos de transformación digital en Colombia; Asi, generar capacidades y competencias para resolver problemas a través de la programación." [1].
-      </a></div>
-    </div>
+    <div class="texto_acompañante"><h1 class="titulo">BIENVENIDO AL REGISTRO</h1>
+      <br><P class="text">Por favor registra tus datos de manera correcta para iniciar tu solicitud. </P></div>
+<form id="form_nuevo_usuario">
+  <label class="label_Registro">Digita tu nombre</label><input type="text" id="dato_nombre_completo" value="" placeholder="Nombre" />
+  <br>
+  <label class="label_Registro">Crea tu usuario</label><input type="text" id="dato_nombre_usuario" value="" placeholder="Usuario" />
+  <br>
+  <label class="label_Registro">Digita tu edad</label><input type="number" id="dato_edad_usuario"  value="" placeholder="Edad" />
+  <br>
+  <label class="label_Registro">Crea tu clave</label><input type="password" id="dato_contrasena"  value="" placeholder="contraseña" />
+  <br>
+  <button class="enviar" onclick="accion()">Registrarse</button> 
+</form>
   </main>
   
   <footer>
@@ -83,6 +88,6 @@
     </div>
 
   </footer>
+  <script src="../javascript/validacionesRegistros.js"></script>
 </body>
-
 </html>
