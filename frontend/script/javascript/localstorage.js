@@ -1,14 +1,14 @@
 export default {
-  setlocalstorage: (body) => {
-    localStorage.setItem("registro", JSON.stringify(body));
+  setlocalstorage: (key, body) => {
+    localStorage.setItem(key, JSON.stringify(body));
   },
-  getlocalstorage: () => {
-    return JSON.parse(localStorage.getItem("registro"));
+  getlocalstorage: (key) => {
+    return JSON.parse(localStorage.getItem(key));
   },
-  deletelocalstorage: () => {
-    localStorage.removeItem("registro");
+  deletelocalstorage: (key) => {
+    localStorage.removeItem(key);
   },
-  validarlocalstorage: () => {
-    return localStorage.key("registro");
+  validarlocalstorage: (key) => {
+    return localStorage.key(key);
   },
 };

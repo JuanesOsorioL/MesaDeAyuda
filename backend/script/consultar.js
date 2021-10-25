@@ -28,7 +28,12 @@ module.exports = {
       (error, rows) => {
         if (!error) {
           if (rows.affectedRows == 1) {
-            let data = { usuario: usuario, contrasena: contrasena, rol: "1" };
+            let data = {
+              usuario: usuario,
+              contrasena: contrasena,
+              rol: "1",
+              nombre: nombre,
+            };
             res.json({ estado: "Exitoso", msj: data });
           } else {
             res.json({ estado: "NUll", msj: "no se guardo" });
@@ -54,17 +59,20 @@ module.exports = {
     });
   },
 
-  ///////////
-
   consultartickets: (req, res) => {
     conexion.query("select * from ticket", (error, rows) => {
       if (!error) {
-        res.json(rows);
+        if (rows.length != 0) {
+          res.json({ estado: "Exitoso", msj: rows });
+        } else {
+          res.json({ estado: "NUll", msj: "no existe" });
+        }
       } else {
-        console.log(error);
+        res.json({ estado: "Fallo", msj: error });
       }
     });
   },
+  ///////////
 
   consultarunticket: (req, res) => {
     console.log(req.body);

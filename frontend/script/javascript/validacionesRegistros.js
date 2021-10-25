@@ -1,15 +1,32 @@
-function accion() {
+import Archivo from "./conexion.js";
+import Localstorage from "./localstorage.js";
+
+const btnregistrar = document.querySelector(".enviar");
+btnregistrar.addEventListener("click", function () {
+  accion();
+});
+
+async function accion() {
   let usuario = document.getElementById("dato_nombre_usuario").value;
   let edad = document.getElementById("dato_edad_usuario").value;
   let nombre = document.getElementById("dato_nombre_completo").value;
   let contrasena = document.getElementById("dato_contrasena").value;
-  cargar = validacion(
+  let cargar = validacion(
     validar_usuario(nombre),
     validar_usuario(usuario),
     validar_edad_usuario(edad),
     validar_contrasena(contrasena)
   );
   let objregistro = IniciarSesion(cargar, nombre, usuario, edad, contrasena);
+  let respuesta = await Archivo.registro(objregistro);
+
+  if (respuesta.estado == "Exitoso") {
+    Localstorage.setlocalstorage("registro", respuesta.msj);
+    location.href = "principal.html";
+    /// mandar la conuslta al html principal
+  } else {
+    alert("Usuario no encontrado");
+  }
 }
 function validar_edad_usuario(edad) {
   if (/^([0-9])+$/.test(edad)) {
@@ -63,14 +80,17 @@ function validacion(Non, Usu, Eda, Con) {
     );
   }
 }
-function IniciarSesion(cargar, Nombre, Usuario, Edad, Contrasena) {
+function IniciarSesion(cargar, nombre, usuario, edad, contrasena) {
   if (cargar) {
+    var f = new Date();
+    let fecha_registro =
+      f.getFullYear() + "-" + (f.getMonth() + 1) + "-" + f.getDate();
     let entra = {
-      nombre: Nombre,
-      usuario: Usuario,
-      contrasena: Contrasena,
-      edad: Edad,
-      rol: 1,
+      nombre,
+      usuario,
+      contrasena,
+      edad,
+      fecha_registro,
     };
     console.log(entra); //retornar para la funciono get
     return entra;

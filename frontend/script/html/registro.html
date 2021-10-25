@@ -51,16 +51,16 @@
     <br>
     <div class="texto_acompañante"><h1 class="titulo">BIENVENIDO AL REGISTRO</h1>
       <br><P class="text">Por favor registra tus datos de manera correcta para iniciar tu solicitud. </P></div>
-<form id="form_nuevo_usuario">
-  <label class="label_Registro">Digita tu nombre</label><input type="text" id="dato_nombre_completo" value="" placeholder="Nombre" />
+<form id="form_nuevo_usuario" method="post">
+  <label class="label_Registro">Digita tu nombre</label><input type="text" id="dato_nombre_completo" value="mauricio" placeholder="Nombre" />
   <br>
-  <label class="label_Registro">Crea tu usuario</label><input type="text" id="dato_nombre_usuario" value="" placeholder="Usuario" />
+  <label class="label_Registro">Crea tu usuario</label><input type="text" id="dato_nombre_usuario" value="mauro" placeholder="Usuario" />
   <br>
-  <label class="label_Registro">Digita tu edad</label><input type="number" id="dato_edad_usuario"  value="" placeholder="Edad" />
+  <label class="label_Registro">Digita tu edad</label><input type="number" id="dato_edad_usuario"  value="45" placeholder="Edad" />
   <br>
-  <label class="label_Registro">Crea tu clave</label><input type="password" id="dato_contrasena"  value="" placeholder="contraseña" />
+  <label class="label_Registro">Crea tu clave</label><input type="password" id="dato_contrasena"  value="mauro123" placeholder="contraseña" />
   <br>
-  <button class="enviar" onclick="accion()">Registrarse</button> 
+  <button class="enviar">Registrarse</button> 
 </form>
   </main>
   
@@ -88,6 +88,6 @@
     </div>
 
   </footer>
-  <script src="../javascript/validacionesRegistros.js"></script>
+  <script type="module" src="../javascript/validacionesRegistros.js"></script>
 </body>
 </html>

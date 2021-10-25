@@ -25,3 +25,4 @@ INSERT INTO usuario
                               fecha_inicio_requerimiento date NOT NULL,
                               estado enum('1','2') not null DEFAULT '1',
                               fecha_cierre_requerimiento date not null DEFAULT "0000/00/00");
+
