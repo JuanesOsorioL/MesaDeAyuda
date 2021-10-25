@@ -47,20 +47,15 @@
   </header>
 
   
-  <main id="container">s
+  <main id="container">
     <br>
     <div class="Contenedor_empleado"><!--este es el que se elimina -->
-    <h1 class="titulo">BIENVENIDO <span id="nombre"></span> </h1><!--este hay que modificarlo con el nombre de usuario o nomsbre completo -->
+    <h1 class="titulo"><spam id="titulo_nombre"></spam></h1><!--este hay que modificarlo con el nombre de usuario o nomsbre completo -->
       <br><P class="nota">Realiza tu solicitud de manera concisa y detallada para una buena compresión y resolución al problema. No dejes ningún campo sin rellenar</P></div>
 <div id="contenedor_solicitud"><div id="marco_solicitud"><form id="form_solicitud">
-  <label class="label_solicitud">Escribe tu area</label><input type="text" id="dato_area" value="" placeholder="Area" />
-  <br>
-  <label class="label_solicitud" id="texto_solicitud">Escribe tu solicitud</label><br><textarea id="dato_solicitud" value="" placeholder="Buen día, por favor..."style="margin: 10px; width: 400px; height: 273px;"></textarea>
-  <br>
-  <div id="Respuesta" ><p class="label_solicitud">Respuesta a tu solicitud anterior:</p></div>
-  <br>
-  <button class="token" onclick="">Crear token</button>
-  <button class="token" onclick="alert('Token no enviado')">Cancelar</button>  
+  <label class="label_solicitud" id="texto_solicitud">Escribe tu solicitud</label><br><textarea id="dato_solicitud" placeholder="Buen día, por favor..."></textarea><br>
+  <button id="enviar_solicitud"class="token">Enviar</button>
+  <button class="token" onclick="alert('Texto borrado')">Borrar</button>  
 </form></div></div></div>
   </main>
   
@@ -88,8 +83,8 @@
     </div>
 
   </footer>
-<script type="module" src="../javascript/conexion.js"> </script> 
-  <script type="module" src="../javascript/requerimiento.js"> </script>
+<script type="module" src="../javascript/conexion.js"> </script>
+  <script type="module" src="../javascript/requerimiento.js"> </script> 
  
 
 </body>
