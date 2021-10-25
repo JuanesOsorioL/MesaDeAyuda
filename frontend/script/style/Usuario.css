@@ -28,37 +28,20 @@
     font-size: 16pt;
     font-family:'Times New Roman', Times, serif;
     margin-top: 30px;
-    margin: 10px;
-}
-#dato_area{
-    padding: 10px;
-    font-size: 16px;
-    border: solid #59203a 3px;
-    border-radius: 28px;
-    margin-left: 1%;
-    margin-top: 20px;
 }
 #dato_solicitud{
     font-size: 20px;
     border: solid #59203a 3px;
     margin-top: 20px;
     margin: 10px;
-    text-align: justify;
+    text-align:justify;
     font-family: 'Times New Roman', Times, serif;
-
-}
-
-
-#Respuesta{
-    padding: 10px;
-    font-size: 16px;
-    border: solid #130201 3px;
-    border-radius: 28px;
-    margin-top: 10px;
-    font-size: 20px;
+    margin: 10px; 
+    width: 400px; 
+    height: 273px;
 }
 .token {
-    font-family: Georgia;
+    font-family:'Times New Roman', Times, serif;
     color: #590d0d;
     font-size: 20px;
     padding: 5px;
@@ -73,9 +56,9 @@
     border: solid #59203a 3px;
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#e35858), to(#ff5252));
     background: -moz-linear-gradient(top, #e35858, #ff5252);
-    margin-top: 25px;
+    margin-top: 10px;
     margin-left: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 .token:hover{
     background: #7fc464;
@@ -95,3 +78,10 @@
 #texto_solicitud{
     margin-top: 70px;
 }
+
+@media (min-width: 769px) and (max-width: 2440px) {
+    #dato_solicitud{
+    margin: 10px; 
+    width: 1132px; 
+    height: 295px;
+    }}
